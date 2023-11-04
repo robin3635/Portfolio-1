@@ -1,0 +1,275 @@
+/* Global styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #222;
+    color: #fff;
+}
+
+.padding-for {
+    padding: 20px 80px;
+}
+
+.margin-for {
+    margin: 100px 0;
+}
+
+h1 {
+    font-size: 2.2em;
+    padding: 20px 0;
+}
+
+h2 {
+    font-size: 1.6em;
+    padding-bottom: 30px;
+}
+
+p {
+    padding-top: 0.5em;
+}
+
+.fo-family {
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --text-ye : #88fc53;
+}
+
+
+/* header section styles  */
+
+/* -----> navbar  */
+
+.navber {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ------> logo  */
+
+.logo {
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 600;
+    user-select: none;
+    color: #ffffff;
+    font-family: 'Lobster', sans-serif;
+}
+
+/* ------> navlink */
+
+.navlink {
+    list-style: none;
+}
+
+.navlink li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navlink li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 10px 0;
+    border-radius: 0.5rem;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s;
+}
+
+.navlink li a:hover {
+    border-bottom: 3px solid #fff;
+    color: #dec4c4;
+}
+
+.navlink > .close {
+    cursor: pointer;
+    display: none;
+    transition: .3s;
+}
+
+.navlink > .close:hover {
+    transform: scale(1.2);
+}
+
+.navber > .menu {
+    cursor: pointer;
+    display: none;
+}
+
+/* Main section style  */
+
+/* ------hero  */
+
+#hero {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero > h1 > span {
+    font-size: 1.1em;
+    color: var(--text-ye);
+}
+
+#hero > h2 > span {
+    color: var(--text-ye);
+}
+
+#hero > h2 {
+    padding-bottom: 0;
+}
+
+#hero > .text-loop {
+    color: var(--text-ye);
+}
+
+/* about section style  */
+
+#about {
+    text-align: center;
+    font-weight: 500;
+}
+
+#about > p > span  , p > q {
+    color: var(--text-ye);
+}
+
+#about > p > a{
+    color: #d3ff0e;
+}
+
+/* Skills section style  */
+
+/* ----> skills  */
+
+#skills > h2 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container > .lan {
+    width: 18%;
+    padding: 15px;
+    margin: 20px;
+    background: #8f7272;
+    border: 1px solid #fff;
+    text-align: center;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+    transition: 0.3s;
+}
+
+.container > .lan:hover {
+    transform: translateY(-10px);
+    background-color: #b59191;
+}
+
+.container .lan > i {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+/* Projects section style  */
+
+/* ------> projects  */
+
+#projects > h2 {
+    text-align: center;
+}
+
+#projects > .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.container > .projects {
+    width: 20%;
+    text-align: center;
+    text-decoration: none;
+    color: #2c2929;
+    background: var(--text-ye);
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #fff;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+}
+
+.container > .projects:hover {
+    transform: scale(1.1);
+}
+
+.projects > i {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+
+/* Education section style  */
+
+/* ----->#education */
+
+#education {
+    text-align: center;
+}
+
+#education > .Dropout {
+    color: var(--text-ye);
+}
+
+#education > p > a{
+    color: #d3ff0e;
+}
+
+/* footer section style  */
+
+/* ----->#contact */
+
+#contact {
+    text-align: center;
+    user-select: none;
+}
+
+#contact h2 {
+    font-size: 1.4em;
+    padding-bottom: 10px;
+}
+
+#contact i {
+    font-size: 1.3em;
+    padding: 10px;
+    color: #fff;
+    transition: .3s;
+}
+
+#contact i:hover {
+    transform: scale(1.3);
+}
+
+/* Copyrigth  */
+
+#copyright {
+    text-align: center;
+}
